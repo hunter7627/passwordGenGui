@@ -1,0 +1,279 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local TextBox_2 = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.570198655, 0, 0.340067327, 0)
+Frame.Size = UDim2.new(0, 219, 0, 102)
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 219, 0, 15)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Dully's open source password generator"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = TextLabel
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0, 0, 0.833333313, 0)
+TextBox.Size = UDim2.new(0, 219, 0, 17)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "Generated Password goes here"
+TextBox.TextColor3 = Color3.fromRGB(255,255,255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = TextBox
+
+TextBox_2.Parent = Frame
+TextBox_2.BackgroundColor3 = Color3.fromRGB(21,21,21)
+TextBox_2.BorderSizePixel = 0
+TextBox_2.Position = UDim2.new(0.520548224, 0, 0.549019754, 0)
+TextBox_2.Size = UDim2.new(0, 96, 0, 20)
+TextBox_2.Font = Enum.Font.SourceSans
+TextBox_2.Text = "total chars ?"
+TextBox_2.TextColor3 = Color3.fromRGB(255,255,255)
+TextBox_2.TextSize = 14.000
+
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = TextBox_2
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0867579877, 0, 0.235294133, 0)
+TextButton.Size = UDim2.new(0, 64, 0, 21)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Generate Pass"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = TextButton
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(204, 97, 97)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.0410958901, 0, 0.539215863, 0)
+TextButton_2.Size = UDim2.new(0, 40, 0, 21)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "letters"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = TextButton_2
+
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(204, 97, 97)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.260273963, 0, 0.539215863, 0)
+TextButton_3.Size = UDim2.new(0, 40, 0, 21)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "numbers"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+math.randomseed(os.time())
+UICorner_6.CornerRadius = UDim.new(0, 5)
+UICorner_6.Parent = TextButton_3
+
+TextButton_4.Parent = Frame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(204, 97, 97)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.474885821, 0, 0.225490361, 0)
+TextButton_4.Size = UDim2.new(0, 40, 0, 21)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "special chars"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 5)
+UICorner_7.Parent = TextButton_4
+
+TextButton_5.Parent = Frame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(204, 97, 97)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.7442922, 0, 0.225490361, 0)
+TextButton_5.Size = UDim2.new(0, 40, 0, 21)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "caps"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14.000
+TextButton_5.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 5)
+UICorner_8.Parent = TextButton_5
+
+UICorner_9.CornerRadius = UDim.new(0, 5)
+UICorner_9.Parent = Frame
+
+local letters = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"}
+local caps = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"}
+local special = {"!","@","#","$","%","&","*","(",")","-","_","=","+","[","{","]","}",",","<",".",">","/","?"}
+local numbers = {"1","2","3","4","5","6","7","8","9","0"}
+
+local on1 = false -- letters
+local on2 = false -- capital letters
+local on3 = false -- special characters
+local on4 = false -- numbers
+local password = 0
+local lenght = 0
+
+local red = Color3.fromRGB(204, 97, 97)
+local green = Color3.fromRGB(114, 255, 137)
+local black = Color3.fromRGB(0,0,0)
+local white = Color3.fromRGB(255,255,255)
+TextButton_2.MouseButton1Click:Connect(function() -- letters
+	if on1 == false then
+		TextButton_2.TextColor3 = black
+		TextButton_2.BackgroundColor3 = green
+		on1 = true
+	else
+		TextButton_2.TextColor3 = white
+		TextButton_2.BackgroundColor3 = red
+		on1 = false
+	end
+end)
+
+
+TextButton_5.MouseButton1Click:Connect(function() -- capital letters
+	if on2 == false then
+		TextButton_5.TextColor3 = black
+		TextButton_5.BackgroundColor3 = green
+		on2 = true
+	else
+		TextButton_5.TextColor3 = white
+		TextButton_5.BackgroundColor3 = red
+		on2 = false
+	end
+end)
+TextButton_4.MouseButton1Click:Connect(function()
+	if on3 == false then
+		TextButton_4.TextColor3 = black
+		TextButton_4.BackgroundColor3 = green
+		on3 = true
+	else
+		TextButton_4.TextColor3 = white
+		TextButton_4.BackgroundColor3 = red
+		on3 = false
+	end
+end)
+
+TextButton_3.MouseButton1Click:Connect(function() -- numbers
+	if on4 == false then
+		TextButton_3.TextColor3 = black
+		TextButton_3.BackgroundColor3 = green
+		on4 = true
+	else
+		TextButton_3.TextColor3 = white
+		TextButton_3.BackgroundColor3 = red
+		on4 = false
+	end
+end)
+
+TextBox.Focused:Connect(function()
+	TextBox.SelectionStart = 1
+	TextBox.CursorPositoon = TextBox:len() + 1
+end)
+local pool = {}
+
+local function generate(x)
+	if     on1 == true and on2 == false and on3 == false and on4 == false then -- 1000 or 2
+		pool = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"} -- for 1000
+
+	elseif on1 == false and on2 == true and on3 == false and on4 == false then -- 0100 or 3
+		pool = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"} -- for 0100
+
+	elseif on1 == false and on2 == false and on3 == true and on4 == false then -- 0010 or 4
+		pool = {"!","@","#","$","%","&","*","(",")","-","_","=","+","[","{","]","}",",","<",".",">","/","?"} -- for 0010
+
+	elseif on1 == false and on2 == false and on3 == false and on4 == true then -- 0001 or 5
+		pool = {"1","2","3","4","5","6","7","8","9","0"} -- for 0001
+	elseif on1 == true and on2 == true and on3 == false and on4 == false then -- 1100 or 6
+		pool = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"} -- for 1100
+	elseif on1 == true and on2 == false and on3 == true and on4 == false then -- 1010 or 7
+		pool = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","!","@","#","$","%","&","*","(",")","-","_","=","+","[","{","]","}",",","<",".",">","/","?"} -- for 1010
+
+	elseif on1 == true and on2 == false and on3 == false and on4 == true then -- 1001 or 8
+		pool = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0"} -- for 1001
+
+	elseif on1 == false and on2 == true and on3 == true and on4 == false then -- 0110 or 9
+		pool = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","!","@","#","$","%","&","*","(",")","-","_","=","+","[","{","]","}",",","<",".",">","/","?"} -- for 0110
+
+	elseif on1 == false and on2 == true and on3 == false and on4 == true then -- 0101 or 10
+		pool = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"} -- for 0101
+
+	elseif on1 == false and on2 == false and on3 == true and on4 == true then -- 0011 or 11
+		pool = {"!","@","#","$","%","&","*","(",")","-","_","=","+","[","{","]","}",",","<",".",">","/","?","1","2","3","4","5","6","7","8","9","0"} -- for 0011
+
+	elseif on1 == true and on2 == true and on3 == true and on4 == false then -- 1110 or 12
+		pool = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","!","@","#","$","%","&","*","(",")","-","_","=","+","[","{","]","}",",","<",".",">","/","?"} -- for 1110
+	elseif on1 == true and on2 == true and on3 == false and on4 == true then -- 1101 or 13
+		pool = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"} -- for 1101
+	elseif on1 == true and on2 == false and on3 == true and on4 == true then -- 1011 or 14
+		pool = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","!","@","#","$","%","&","*","(",")","-","_","=","+","[","{","]","}",",","<",".",">","/","?","1","2","3","4","5","6","7","8","9","0"} -- for 1011
+	elseif on1 == false and on2 == true and on3 == true and on4 == true then -- 0111 or 15
+		pool = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","!","@","#","$","%","&","*","(",")","-","_","=","+","[","{","]","}",",","<",".",">","/","?","1","2","3","4","5","6","7","8","9","0"} -- for 0111
+	elseif on1 == true and on2 == true and on3 == true and on4 == true then -- 1111 or 16
+		pool = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","!","@","#","$","%","&","*","(",")","-","_","=","+","[","{","]","}",",","<",".",">","/","?","1","2","3","4","5","6","7","8","9","0"} -- for 1111
+
+	else -- 0000 or 1
+		pool = {}
+	end
+	local function combine()
+		for q = 1,x do
+			local randomChar = pool[math.random(1,#pool)]
+			password = password..randomChar
+		end
+	end
+	combine()
+	return password
+end
+
+TextButton.MouseButton1Click:Connect(function()
+
+	TextBox.Text = tostring(generate(tonumber(TextBox_2.Text)))
+	password = ""
+end)
